@@ -17,15 +17,6 @@ class _DiceRollerState extends State<DiceRoller> {
   late DiceNumberLayout _diceNumberLayout;
   late TimerHelper _timerHelper;
 
-  // _DiceRollerState() {
-  //   _timerHelper = TimerHelper()
-  //     ..onTick = () {
-  //       setState(() {
-  //         _diceNumberLayout = AppConst.diceNumbers.random;
-  //       });
-  //     };
-  // }
-
   void _rollDice() {
     _timerHelper.startTimer();
   }
