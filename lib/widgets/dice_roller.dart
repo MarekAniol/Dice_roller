@@ -51,7 +51,6 @@ class _DiceRollerState extends State<DiceRoller> {
         GestureDetector(
           onTap: () {
             context.readVisibility;
-
             _rollDice();
           },
           child: DiceElementWidget.diceSide(
