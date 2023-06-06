@@ -14,17 +14,17 @@ class DiceRoller extends StatefulWidget {
 }
 
 class _DiceRollerState extends State<DiceRoller> {
-  DiceNumberLayout _diceNumberLayout = DiceNumberLayout.one();
+  late DiceNumberLayout _diceNumberLayout;
   late TimerHelper _timerHelper;
 
-  _DiceRollerState() {
-    _timerHelper = TimerHelper()
-      ..onTick = () {
-        setState(() {
-          _diceNumberLayout = AppConst.diceNumbers.random;
-        });
-      };
-  }
+  // _DiceRollerState() {
+  //   _timerHelper = TimerHelper()
+  //     ..onTick = () {
+  //       setState(() {
+  //         _diceNumberLayout = AppConst.diceNumbers.random;
+  //       });
+  //     };
+  // }
 
   void _rollDice() {
     _timerHelper.startTimer();
@@ -33,7 +33,13 @@ class _DiceRollerState extends State<DiceRoller> {
   @override
   void initState() {
     super.initState();
-    _timerHelper;
+    _diceNumberLayout = DiceNumberLayout.one();
+    _timerHelper = TimerHelper()
+      ..onTick = () {
+        setState(() {
+          _diceNumberLayout = AppConst.diceNumbers.random;
+        });
+      };
   }
 
   @override
