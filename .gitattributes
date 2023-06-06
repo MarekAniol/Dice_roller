@@ -1,8 +1,12 @@
-* linguist-vendored
-*.cpp linguist-vendored=Dart
-*.java linguist-detectable=false
-*.js linguist-detectable=false
-*.html linguist-detectable=false
-*.xml linguist-detectable=false
-*.dart linguist-detectable=true
-
+*        text=auto
+*.dart   text
+*.gradle text
+*.html   text
+*.java   text
+*.json   text
+*.md     text
+*.py     text
+*.sh     text
+*.txt    text
+*.xml    text
+*.yaml   text
