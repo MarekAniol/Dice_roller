@@ -1,5 +1,5 @@
 * linguist-vendored
-*.cpp linguist-vendored=false
+*.cpp linguist-vendored=Dart
 *.java linguist-detectable=false
 *.js linguist-detectable=false
 *.html linguist-detectable=false
